@@ -35,6 +35,8 @@ setup(name='plonesocial.suite',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'plonesocial.microblog',
+          'plonesocial.activitystream',
           # -*- Extra requirements: -*-
       ],
       extras_require={'test': ['plone.app.testing']},
