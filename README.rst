@@ -32,7 +32,7 @@ Plonesocial
 Plonesocial consists of:
 
 `plonesocial.suite`_
- An out-of-the-box social business experience integrating all of the above.
+ An out-of-the-box social business experience integrating all of the plonesocial.* packages.
  If you're an end user, this is what you're looking for.
 
 `plonesocial.microblog`_
