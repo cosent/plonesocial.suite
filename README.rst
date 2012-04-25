@@ -15,10 +15,6 @@ plonesocial.suite
 This is the integration package for all the various plonesocial.* packages
 into a single consistent user experience that's easy to install.
 
-In addition to the constituent packages' functionality, see below,
-plonesocial.suite also provides a standalone "plonesocial view" on
-the Plone site root.
-
 
 Plonesocial
 ===========
