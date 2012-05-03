@@ -1,7 +1,6 @@
 from setuptools import setup, find_packages
-import os
 
-version = '0.1'
+version = '0.2'
 
 long_description = (
     open('README.rst').read()
@@ -28,8 +27,7 @@ setup(name='plonesocial.suite',
       author_email='guido.stevens@cosent.net',
       url='http://github.com/cosent/plonesocial.suite',
       license='gpl',
-      packages=find_packages('src'),
-      package_dir = {'': 'src'},
+      packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['plonesocial'],
       include_package_data=True,
       zip_safe=False,
