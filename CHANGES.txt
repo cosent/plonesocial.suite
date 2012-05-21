@@ -1,8 +1,25 @@
-Changelog
-=========
+0.3 (2012-05-21)
+----------------
 
-0.1dev (unreleased)
+* update changelog [gyst]
+* renamed portletmanager [gyst]
+* fix test setup [gyst]
+* nicer Add-on profile name [gyst]
+* bump version [gyst]
+
+0.2 (2012-05-04)
+----------------
+
+* activity stream view is renamed [gyst]
+* automate view and portlet assignments [gyst]
+* get rid of src dir indirection [gyst]
+* undo "extract standalone view from plonesocial.activitystream" - manual merge of multiple changes [gyst]
+* update documentation [gyst]
+* hide stream viewlet, show only in dedicated standalone view by default [gyst]
+* cleanup extraction and declare dependencies [gyst]
+* extract standalone view from plonesocial.activitystream [gyst]
+
+0.1dev (Unreleased)
 -------------------
 
-- Package created using zopeskel
-  [Guido Stevens]
+* initial checkin from ZopeSkel [gyst]
