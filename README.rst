@@ -31,7 +31,7 @@ Plonesocial consists of:
 `plonesocial.activitystream`_
  Lists content changes, discussion replies, and status updates
 
-plonesocial.network
+`plonesocial.network`_
  Follow/unfollow of users
 
 plonesocial.like
@@ -40,8 +40,9 @@ plonesocial.like
 `plonesocial.buildout`_
  Developer buildout. Not a Python package. Intended for Plonesocial developers only.
 
+.. _plonesocial.suite: https://github.com/cosent/plonesocial.suite
 .. _plonesocial.microblog: https://github.com/cosent/plonesocial.microblog
 .. _plonesocial.activitystream: https://github.com/cosent/plonesocial.activitystream
-.. _plonesocial.suite: https://github.com/cosent/plonesocial.suite
+.. _plonesocial.network: https://github.com/cosent/plonesocial.network
 .. _plonesocial.buildout: https://github.com/cosent/plonesocial.buildout
 
