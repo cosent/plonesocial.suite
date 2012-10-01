@@ -36,6 +36,8 @@ setup(name='plonesocial.suite',
           'plonesocial.microblog',
           'plonesocial.activitystream',
           'plonesocial.network',
+          'loremipsum',
+          'plone.api',
           # -*- Extra requirements: -*-
       ],
       extras_require={'test': ['plone.app.testing']},
