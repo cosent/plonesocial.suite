@@ -1,3 +1,21 @@
+0.4 (2012-10-09)
+----------------
+
+This release integrates plonesocial.network.
+
+* update docs [gyst]
+* fix dependency [gyst]
+* reindent for better pep8 [gyst]
+* enable plone.app.discussion by default for Documents, Events and News Items [gyst]
+* flush_queue is now public [gyst]
+* setup demo graph [gyst]
+* demo users + microblog updates [gyst]
+* link plonesocial.network [gyst]
+* integrate plonesocial.network [gyst]
+* GS name and plonesocial.network [gyst]
+* version bump to 0.4 [gyst]
+
+
 0.3 (2012-05-21)
 ----------------
 
