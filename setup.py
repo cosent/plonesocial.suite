@@ -34,6 +34,7 @@ setup(
     zip_safe=False,
     install_requires=[
         'setuptools',
+        'Plone',
         'plonesocial.microblog',
         'plonesocial.activitystream',
         'plonesocial.network',
