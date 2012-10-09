@@ -1,3 +1,9 @@
+0.4.1 (2012-10-09)
+----------------
+
+* tune demo generator [gyst]
+* merge: provide integration menu [gyst]
+
 0.4 (2012-10-09)
 ----------------
 
