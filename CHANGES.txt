@@ -1,6 +1,7 @@
 0.4.1 (2012-10-09)
 ----------------
 
+* update install doc [gyst]
 * tune demo generator [gyst]
 * merge: provide integration menu [gyst]
 

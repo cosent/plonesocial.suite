@@ -23,8 +23,11 @@ Installation
 Add the plonesocial.suite egg to your buildout::
 
     [instance]
-    eggs = Plone
-           plonesocial.suite
+    eggs = 
+         Zope2
+         PIL
+         Plone
+         plonesocial.suite
 
 Run the buildout.
 
