@@ -10,3 +10,4 @@ develop-eggs/
 include/
 lib/
 parts/
+buildout-cache/
