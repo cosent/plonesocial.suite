@@ -13,6 +13,6 @@ install: prerequisites
 	bin/buildout -c travis.cfg $(options)
 
 tests:
-	bin/test
+	bin/test -s plonesocial.suite -s plonesocial.microblog -s plonesocial.activitystream -s plonesocial.network
 	pyflakes plonesocial/
 	pep8 --ignore=$(pep8_ignores) plonesocial/
