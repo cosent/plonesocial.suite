@@ -1,17 +1,20 @@
-.. contents::
+.. image:: https://secure.travis-ci.org/cosent/plonesocial.suite.png
+    :target: http://travis-ci.org/cosent/plonesocial.suite
+
 
 Introduction
 ============
 
-Plonesocial.suite is an integrated set of social business add-ons for Plone.
+The PloneSocial suite is an integrated set of social business add-ons for Plone.
 
-plonesocial.suite provides a full microblogging solution, 
+PloneSocial provides a full microblogging solution, 
 including activity streams, user profiles and follow/unfollow functionality.
 
-This package is targeted at end-users and integrators.
 
 plonesocial.suite
-=================
+-----------------
+
+This package is targeted at end-users and integrators.
 
 This is the integration package for all the various plonesocial.* packages
 into a single consistent user experience that's easy to install.
@@ -20,7 +23,7 @@ into a single consistent user experience that's easy to install.
 Installation
 ============
 
-Add the plonesocial.suite egg to your buildout::
+Add the ``plonesocial.suite`` egg to your buildout::
 
     [instance]
     eggs = 
@@ -35,6 +38,26 @@ Install "Plonesocial Suite" via the Quickinstaller.
 
 If you need some demo content to play with, you can run the
 "Plonesocial Suite (demo)" profile from GenericSetup.   
+
+
+Features and Roadmap
+--------------------
+
+The 0.4 release of plonesocial.suite provides:
+
+* microblog status updates
+* personal profile with follow/unfollow
+  - and following/followers social graph views
+* activitystream, with integrated:
+  - status updates
+  - content creation
+  - discussion replies
+  - hashtag support
+  - filter by "following"
+
+The slideshow_ of the PloneSocial presentation at PloneConf2012 is available on Slideshare.
+
+An extensive roadmap_ for the plonesocial suite is available on github.
 
 
 Plonesocial
@@ -67,4 +90,5 @@ plonesocial.like
 .. _plonesocial.activitystream: https://github.com/cosent/plonesocial.activitystream
 .. _plonesocial.network: https://github.com/cosent/plonesocial.network
 .. _plonesocial.buildout: https://github.com/cosent/plonesocial.buildout
-
+.. _roadmap: https://github.com/cosent/plonesocial.suite/wiki
+.. _slideshow: http://www.slideshare.net/GuidoStevens/plone-goes-social
