@@ -5,7 +5,7 @@ pep8_ignores = E501
 options = -N -q -t 3
 
 prerequisites:
-	sudo apt-get install -qq pep8 pyflakes
+#	sudo apt-get install -qq pep8 pyflakes
 	mkdir -p buildout-cache/downloads
 
 install: prerequisites
@@ -14,5 +14,5 @@ install: prerequisites
 
 tests:
 	bin/test -s plonesocial.suite -s plonesocial.microblog -s plonesocial.activitystream -s plonesocial.network
-	pyflakes plonesocial/
-	pep8 --ignore=$(pep8_ignores) plonesocial/
+#	pyflakes plonesocial/
+#	pep8 --ignore=$(pep8_ignores) plonesocial/
