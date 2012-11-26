@@ -1,11 +1,30 @@
 Changelog
 =========
 
-0.4.2 (unreleased)
+0.4.2 (2012-11-26)
 ------------------
 
-* Added Spanish translation. [macagua]
-* Added improvements about i18n support. [macagua]
+* update changelog, release [gyst]
+* provide a virtualenv-enabled Travis buildout that can be debugged on a dev box [gyst]
+* re-activate code analysis tests (but only on plonesocial.suite itself) [gyst]
+* Added locales and i18n extract script [macagua]
+* Added more improvements about i18n support [macagua]
+* Updated contributors file [macagua]
+* Updated changelog file [macagua]
+* disable pep8/pyflakes for now [gyst]
+* fix packages to be tested [hvelarde]
+* pep8/pyflakes [hvelarde]
+* update Travis CI configuration to include pep8/pyflakes testing [hvelarde]
+* oops we do need test-eggs [gyst]
+* ignore dist [gyst]
+* move sources into ./src/ to enable multi-package tests on Travis [gyst]
+* update location of extended configuration as the plonetest repo was moved to GitHub [hvelarde]
+* update list of ignored objects [hvelarde]
+* Cannot get multi-package tests to work with Travis [gyst]
+* let Travis run the full cross-integrated test suite [gyst]
+* cleanup, bump version, update docs [gyst]
+* add Travis CI configuration [hvelarde]
+
 
 0.4.1 (2012-10-09)
 ------------------
