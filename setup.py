@@ -22,7 +22,7 @@ setup(
     # http://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[
         "Programming Language :: Python",
-        ],
+    ],
     keywords='plone socbiz social microblogging',
     author='Guido Stevens',
     author_email='guido.stevens@cosent.net',
@@ -42,11 +42,10 @@ setup(
         'loremipsum',
         'plone.api',
         # -*- Extra requirements: -*-
-        ],
+    ],
     extras_require={'test': ['plone.app.testing']},
     entry_points="""
       # -*- Entry points: -*-
-  	  [z3c.autoinclude.plugin]
-  	  target = plone
-      """,
-    )
+          [z3c.autoinclude.plugin]
+          target = plone
+      """,)
