@@ -9,7 +9,7 @@ after_script:
 env:
   global:
   - secure: ! "UDvxbh56vzNdb8cGnpZ8Xy9TifIQpGqBzx9drxBohAOdmLKFhTQi9iqmZiF6\nG0+p6NDZFFBpKxBY1itPXbz/b2ByDneFS5isWkZF73qviSR9M4F2Z5RSDqVv\nPZ33nhsyrNMeS+abU25XmN/W+qfsWzl1wOujQHqmiHEWU1kPh8s="
-  - secure: ! "iFxT/eEuFYaEChiAvc8Ti/vyhY+6vLwbWecMgeBBQdn1wHVia9Mc+PMaaQFg\ni82WV6S+X+BGYSnwzm/9UhAoI6NTrU+99jY3DAipTl007M3NbQsmshdJW1FE\nevjuqR41lkBMrOwgupnfI7hU5jLItV3MEKo0P9iwO/kaMibbFJk="
+  - secure: ! "YbCdc7xXkN10v2JqIDOyN+LxHVUkXXOhmZtw3iMUGMDBnluPdvB9jzj9///9\neN7gdgVZRgx/ePYtly/zo5ynn+HUWoeCmltfymGRoaCA7fJLeM+rhhqPHXic\nLQfGWLeBn4Ds82PkhhfKjbw9XzkfT+BxPX+fsmHc7YNtZU6aZVo="
   - ROBOT_BUILD_NUMBER=travis-$TRAVIS_BUILD_NUMBER
   - ROBOT_REMOTE_URL=http://$SAUCE_USERNAME:$SAUCE_ACCESS_KEY@ondemand.saucelabs.com:80/wd/hub
   - ROBOT_DESIRED_CAPABILITIES=tunnel-identifier:$TRAVIS_JOB_ID
