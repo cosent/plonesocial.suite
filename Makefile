@@ -3,12 +3,20 @@ default: devel test
 devel: bin/buildout buildout-cache/downloads
 	bin/buildout -c devel.cfg -N -t 3
 
-travis: bin/buildout buildout-cache/downloads
+travis: saucelabs travis_build
+
+travis_build: bin/buildout buildout-cache/downloads
 	bin/buildout -c buildout.cfg -N -t 3
 
 test:
-	bin/test -s plonesocial.suite -s plonesocial.microblog -s plonesocial.activitystream -s plonesocial.network
-	bin/flake8 src
+	bin/test -s plonesocial.suite
+	bin/flake8 src/plonesocial
+
+saucelabs:
+	curl -O http://saucelabs.com/downloads/Sauce-Connect-latest.zip
+	unzip Sauce-Connect-latest.zip
+	java -jar Sauce-Connect.jar $SAUCE_USERNAME $SAUCE_ACCESS_KEY -i $TRAVIS_JOB_ID -f CONNECTED &
+	JAVA_PID=$!
 
 predepends:
 	sudo apt-get install -y firefox
