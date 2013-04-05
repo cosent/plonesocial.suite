@@ -26,3 +26,7 @@ buildout-cache/downloads:
 clean:
 	rm -rf bin/* .installed.cfg parts/download
 
+# robot development: start server first
+## bin/robot-server plonesocial.suite.testing.PLONESOCIAL_ROBOT_TESTING
+# run and rerun tests without restarting the server
+## bin/robot src/plonesocial/suite/tests/hello_world.robot 
