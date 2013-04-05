@@ -1,6 +1,9 @@
-default: buildout test
+default: devel test
 
-buildout: bin/buildout buildout-cache/downloads
+travis: bin/buildout buildout-cache/downloads
+	bin/buildout -c travis.cfg -N -t 3
+
+devel: bin/buildout buildout-cache/downloads
 	bin/buildout -c buildout.cfg -N -t 3
 
 test:
