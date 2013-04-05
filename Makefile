@@ -17,6 +17,7 @@ saucelabs:
 	unzip Sauce-Connect-latest.zip
 	java -jar Sauce-Connect.jar $$SAUCE_USERNAME $$SAUCE_ACCESS_KEY -i $$TRAVIS_JOB_ID -f CONNECTED &
 	JAVA_PID=$$!
+	bash -c "while [ ! -f CONNECTED ]; do sleep 2; done"
 
 predepends:
 	sudo apt-get install -y firefox

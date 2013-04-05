@@ -1,8 +1,6 @@
 language: python
 python: 2.7
 install: make travis
-before_script:
-  - bash -c "while [ ! -f CONNECTED ]; do sleep 2; done"
 script: make test 
 notifications:
   email: guido.stevens@cosent.net
@@ -10,7 +8,7 @@ after_script:
   - kill $JAVA_PID
 env:
   global:
-  - secure: ! "Q9TEAiLNmLqPD9dGk1qUW64uJFjLaqEcvlydZW2R86FJMS+WdM7U5GuVq+gF\nHeMbMtiwdclVCuzKNox3U4pz8uCrDbfeL8u4HEGJ66z/tvEw8S/O+EpePNg3\nDaDamPQNPH1EriSgkctf+kxc7qW1CZOqiDbLzF4FYxpxOCt2cn4="
+  - secure: ! "UDvxbh56vzNdb8cGnpZ8Xy9TifIQpGqBzx9drxBohAOdmLKFhTQi9iqmZiF6\nG0+p6NDZFFBpKxBY1itPXbz/b2ByDneFS5isWkZF73qviSR9M4F2Z5RSDqVv\nPZ33nhsyrNMeS+abU25XmN/W+qfsWzl1wOujQHqmiHEWU1kPh8s="
   - secure: ! "iFxT/eEuFYaEChiAvc8Ti/vyhY+6vLwbWecMgeBBQdn1wHVia9Mc+PMaaQFg\ni82WV6S+X+BGYSnwzm/9UhAoI6NTrU+99jY3DAipTl007M3NbQsmshdJW1FE\nevjuqR41lkBMrOwgupnfI7hU5jLItV3MEKo0P9iwO/kaMibbFJk="
   - ROBOT_BUILD_NUMBER=travis-$TRAVIS_BUILD_NUMBER
   - ROBOT_REMOTE_URL=http://$SAUCE_USERNAME:$SAUCE_ACCESS_KEY@ondemand.saucelabs.com:80/wd/hub
