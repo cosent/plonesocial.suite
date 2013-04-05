@@ -24,7 +24,7 @@ robot-server:
 	bin/robot-server plonesocial.suite.testing.PLONESOCIAL_ROBOT_TESTING
 
 predepends:
-	sudo apt-get install -y firefox
+	sudo apt-get install -y firefox python-tk
 
 bin/buildout: bin/python
 	bin/easy_install zc.buildout==1.6.3
