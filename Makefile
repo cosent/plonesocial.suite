@@ -15,8 +15,8 @@ test:
 saucelabs:
 	curl -O http://saucelabs.com/downloads/Sauce-Connect-latest.zip
 	unzip Sauce-Connect-latest.zip
-	java -jar Sauce-Connect.jar $SAUCE_USERNAME $SAUCE_ACCESS_KEY -i $TRAVIS_JOB_ID -f CONNECTED &
-	JAVA_PID=$!
+	java -jar Sauce-Connect.jar $$SAUCE_USERNAME $$SAUCE_ACCESS_KEY -i $$TRAVIS_JOB_ID -f CONNECTED &
+	JAVA_PID=$$!
 
 predepends:
 	sudo apt-get install -y firefox
