@@ -4,7 +4,7 @@
 *~
 .installed.cfg
 .mr.developer.cfg
-src/
+src/plonesocial.*
 bin/
 coverage/
 develop-eggs/
