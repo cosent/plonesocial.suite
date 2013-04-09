@@ -3,6 +3,8 @@
 *.pyc
 *~
 .installed.cfg
+.mr.developer.cfg
+src/plonesocial.*
 bin/
 coverage/
 develop-eggs/
