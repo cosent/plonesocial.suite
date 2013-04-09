@@ -4,7 +4,7 @@ devel: bin/buildout buildout-cache/downloads
 	bin/buildout -c devel.cfg -N -t 3
 
 test:
-	bin/test -s plonesocial.suite
+	bin/test -s plonesocial.suite --all
 	bin/flake8 src/plonesocial
 
 demo:
