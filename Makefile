@@ -8,7 +8,7 @@ test:
 	bin/flake8 src/plonesocial
 
 demo:
-	bin/test -s plonesocial.suite -t demo
+	bin/test -s plonesocial.suite -t demo --all
 
 travis: install_saucelabs travis_build
 
