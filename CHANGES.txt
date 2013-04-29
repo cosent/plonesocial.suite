@@ -1,6 +1,12 @@
 Changelog
 =========
 
+0.4.3 (2013-04-29)
+------------------
+
+* plonesocial navigation bar should not be visible to anon [gyst]
+* Robot integration tests with Travis/Saucelabs integration [gyst, datakurre]
+
 0.4.2 (2012-11-26)
 ------------------
 
