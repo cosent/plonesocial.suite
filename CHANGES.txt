@@ -1,6 +1,11 @@
 Changelog
 =========
 
+0.5 (unreleased)
+----------------
+
+* IMicroblogContext test coverage TODO [gyst]
+
 0.4.3 (2013-04-29)
 ------------------
 
