@@ -1,6 +1,7 @@
 default: devel test
 
 devel: bin/buildout buildout-cache/downloads
+	[ -f bin/develop ] && bin/develop up
 	bin/buildout -c devel.cfg -N -t 3
 
 test:
