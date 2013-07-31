@@ -1,12 +1,12 @@
 Changelog
 =========
 
-0.5.x (unreleased)
+0.5.0 (2013-07-31)
 ------------------
 
 * provide deprecated browserlayer interface for backward compatibility [gyst]
 
-0.5.0 (2013-07-04)
+0.5.0rc1 (2013-07-04)
 ------------------
 
 * update docs
