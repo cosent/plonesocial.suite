@@ -2,7 +2,7 @@ default: devel test
 
 devel: bin/buildout buildout-cache/downloads
 	[ -f bin/develop ] && bin/develop up || true
-	bin/buildout -c devel.cfg -N -t 3
+	bin/buildout -c devel.cfg -t 3
 
 test:
 	bin/test -s plonesocial.suite --all
@@ -14,7 +14,7 @@ demo:
 travis: install_saucelabs travis_build
 
 travis_build: bin/buildout buildout-cache/downloads
-	bin/buildout -c buildout.cfg -N -t 3
+	bin/buildout -c buildout.cfg -t 3
 
 install_saucelabs:
 	curl -O http://saucelabs.com/downloads/Sauce-Connect-latest.zip
