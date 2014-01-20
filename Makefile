@@ -47,3 +47,8 @@ clean:
 ## bin/robot-server plonesocial.suite.testing.PLONESOCIAL_ROBOT_TESTING
 # run and rerun tests without restarting the server
 ## bin/robot src/plonesocial/suite/tests/hello_world.robot 
+
+## tired of the robot hijacking your screen?
+# sudo apt-get install xserver-xephyr
+# Xephyr :1 -ac -screen 1024x768 &
+# DISPLAY=:1 bin/test -s plonesocial.suite
