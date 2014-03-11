@@ -1,6 +1,25 @@
 Changelog
 =========
 
+0.5.3 (2014-03-11)
+------------------
+
+* document Xephyr use [Guido A.J. Stevens]
+* don't include demo suite in continuous integration testing [Guido A.J. Stevens]
+* don't timeout the build so fast [Guido A.J. Stevens]
+* trailing checkin [Guido A.J. Stevens]
+* tuning the demo WIP [Guido A.J. Stevens]
+* See if we can avoid Saucelabs timeout [Guido A.J. Stevens]
+* feature-complete the demo video [Guido A.J. Stevens]
+* add workspace stubs to demo suite [Guido A.J. Stevens]
+* consolidate all test setup into the demo setuphandler; provide admin avatar [Guido A.J. Stevens]
+* rename functional test dir [Guido A.J. Stevens]
+* remove -N buildout flag [Guido A.J. Stevens]
+* fix clean bootstrap [Guido A.J. Stevens]
+* add warning on demo installer [Guido A.J. Stevens]
+* add tags, cleanup whitespace [Guido A.J. Stevens]
+
+
 0.5.2 (2013-07-31)
 ------------------
 
