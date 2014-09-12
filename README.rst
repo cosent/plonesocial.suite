@@ -50,9 +50,10 @@ Install "Plonesocial Suite" via the Quickinstaller.
 Theme
 -----
 
-`plonesocial.theme`_ provides a Bootstrap based Diazo theme which is made available but not activated by default.
+`plonesocial.theme`_ provides a Bootstrap based Diazo theme which is activated by the default setup profile.
 
-Install "Plonesocial Theme" via the Quickinstaller for a better user experience.
+If you want the Plonesocial backend components, but not the theme, do not install plonesocial.suite
+but instead install the separate backend components. It's a pluggable system.
 
 Demo
 ----
