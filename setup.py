@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-version = '0.5.3'
+version = '0.7dev'
 
 long_description = (
     open('README.rst').read()
@@ -39,6 +39,8 @@ setup(
         'plonesocial.microblog',
         'plonesocial.activitystream',
         'plonesocial.network',
+        'plonesocial.messaging',
+        'plonesocial.core',
         'plonesocial.theme',
         'loremipsum',
         'plone.api',
