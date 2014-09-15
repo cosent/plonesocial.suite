@@ -1,5 +1,3 @@
-.. image:: https://secure.travis-ci.org/cosent/plonesocial.suite.png
-    :target: http://travis-ci.org/cosent/plonesocial.suite
 
 
 Introduction
@@ -29,6 +27,12 @@ This package is maintained by Cosent_.
 .. _Cosent: http://cosent.nl
 .. |Cosent| image:: http://cosent.nl/images/logo-external.png 
                     :alt: Cosent
+                    
+Build status (harmless)
+-----------------------
+
+.. image:: https://secure.travis-ci.org/cosent/plonesocial.suite.png
+    :target: http://travis-ci.org/cosent/plonesocial.suite
 
 
 Installation
