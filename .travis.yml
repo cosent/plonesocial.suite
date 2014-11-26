@@ -1,7 +1,7 @@
 language: python
 python: 2.7
 install: make travis
-script: make test 
+script: make test
 notifications:
   email: guido.stevens@cosent.net
 after_script:
