@@ -41,7 +41,7 @@ buildout-cache/downloads:
 	[ -d buildout-cache ] || mkdir -p buildout-cache/downloads
 
 clean:
-	rm -rf bin/* .installed.cfg parts/download
+	rm -rf bin/* .installed.cfg parts/download lib/*
 
 # robot development: start server first
 ## bin/robot-server plonesocial.suite.testing.PLONESOCIAL_ROBOT_TESTING
