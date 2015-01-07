@@ -28,11 +28,20 @@ This package is maintained by Cosent_.
 .. |Cosent| image:: http://cosent.nl/images/logo-external.png 
                     :alt: Cosent
                     
+
 Build status (harmless)
 -----------------------
 
+Robot tests for Plone Social and Plone Intranet
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 .. image:: https://secure.travis-ci.org/cosent/plonesocial.suite.png
     :target: http://travis-ci.org/cosent/plonesocial.suite
+.. image:: http://jenkins.ploneintranet.net/buildStatus/icon?job=Plone%20Social%20Suite
+   :target: http://jenkins.ploneintranet.net/job/Plone%20Social%20Suite%20Master/badge/
+
+.. image:: http://jenkins.ploneintranet.net/buildStatus/icon?job=Plone%20Intranet%20Suite%20Master
+   :target: http://jenkins.ploneintranet.net/job/Plone%20Intranet%20Suite%20Master/badge/
 
 
 Installation
