@@ -5,6 +5,7 @@
 .installed.cfg
 .mr.developer.cfg
 src/plonesocial.*
+src/plone.app.blocks
 bin/
 coverage/
 develop-eggs/
@@ -16,3 +17,6 @@ parts/
 var/
 dist/
 buildout-cache
+.cache/
+.mozilla/
+

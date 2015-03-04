@@ -28,9 +28,9 @@ setup(
     author_email='guido.stevens@cosent.net',
     url='http://github.com/cosent/plonesocial.suite',
     license='gpl',
-    packages=find_packages('src', exclude=['ez_setup']),
+    packages=find_packages('src'),
     package_dir={'': 'src'},
-    namespace_packages=['plonesocial'],
+    namespace_packages=['plonesocial', ],
     include_package_data=True,
     zip_safe=False,
     install_requires=[

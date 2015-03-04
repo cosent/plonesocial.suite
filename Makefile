@@ -1,15 +1,39 @@
-default: devel test
+PROJECT=plonesocial.buildout
+
+default: devel
+
+docker-build:
+	docker build -t $(PROJECT) .
+
+# re-uses ssh agent
+# presupposes your buildout cache is in /var/tmp as configured in .buildout
+# also loads your standard .bashrc
+docker-run:
+	docker run -i -t \
+		--net=host \
+		-v $(SSH_AUTH_SOCK):/tmp/auth.sock \
+		-v $(HOME)/.gitconfig:/.gitconfig \
+		-v $(HOME)/.gitignore:/.gitignore \
+		-v /var/tmp:/var/tmp \
+		-v $(HOME)/.bashrc:/.bashrc \
+		-v $(HOME)/.buildout:/.buildout \
+		-e SSH_AUTH_SOCK=/tmp/auth.sock \
+		-v $(PWD):/app -w /app -u app $(PROJECT)
 
 devel: bin/buildout buildout-cache/downloads
 	[ -f bin/develop ] && bin/develop up || true
 	bin/buildout -c devel.cfg
 
+
 test:
-	bin/test -s plonesocial.suite
-	bin/flake8 src/plonesocial
+	Xvfb :97 1>/dev/null 2>&1 & HOME=/app DISPLAY=:97 bin/test -s plonesocial.suite
 
 demo:
-	bin/test -s plonesocial.suite -t demo --all
+	HOME=/app DISPLAY=:0 bin/test -s plonesocial.suite -t demo --all
+
+travis-test:
+	bin/test -s plonesocial.suite
+	bin/flake8 src/plonesocial
 
 travis: install_saucelabs travis_build
 
@@ -30,12 +54,13 @@ robot-server:
 predepends:
 	sudo apt-get install -y firefox python-tk
 
-bin/buildout: bin/python
-	bin/easy_install zc.buildout==1.6.3
-	bin/easy_install distribute==0.6.28
+### helper targets ###
 
-bin/python:
-	virtualenv --clear --no-site-packages --distribute .
+bin/buildout: bin/python2.7
+	@bin/pip install -r requirements.txt
+
+bin/python2.7:
+	@virtualenv --clear --no-site-packages .
 
 buildout-cache/downloads:
 	[ -d buildout-cache ] || mkdir -p buildout-cache/downloads
