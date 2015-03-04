@@ -20,7 +20,7 @@ docker-run:
 		-e SSH_AUTH_SOCK=/tmp/auth.sock \
 		-v $(PWD):/app -w /app -u app $(PROJECT)
 
-devel: bin/buildout buildout-cache/downloads
+devel: bin/buildout
 	[ -f bin/develop ] && bin/develop up || true
 	bin/buildout -c devel.cfg
 
@@ -38,7 +38,7 @@ travis-test:
 travis: install_saucelabs travis_build
 
 travis_build: bin/buildout buildout-cache/downloads
-	bin/buildout -c buildout.cfg
+	bin/buildout -c travis.cfg
 
 install_saucelabs:
 	curl -O http://saucelabs.com/downloads/Sauce-Connect-latest.zip
