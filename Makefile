@@ -1,4 +1,4 @@
-PROJECT=plonesocial.buildout
+PROJECT=plonesocial.suite
 
 default: devel
 
