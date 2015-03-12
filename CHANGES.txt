@@ -6,7 +6,7 @@ Changelog
 ------------------
 
 * install theme by default [Guido A.J. Stevens]
-* depend on plonesocial.messaging and plonesocial.core [Guido A.J. Stevens]
+* depend on ploneintranet.messaging and ploneintranet.core [Guido A.J. Stevens]
 
 0.5.3 (2014-03-11)
 ------------------
@@ -41,9 +41,9 @@ Changelog
 * IMicroblogContext functional test coverage WIP [Guido A.J. Stevens]
 * demo: setup a full IMicroblogContext workspace [Guido A.J. Stevens]
 * adjust robot tests to new @@stream traversal behaviour [Guido A.J. Stevens]
-* move navigation bar to plonesocial.activitystream [Guido A.J. Stevens]
+* move navigation bar to ploneintranet.activitystream [Guido A.J. Stevens]
 * fix tests for theme integration [Guido A.J. Stevens]
-* integrate plonesocial.theme into demo setup [Guido A.J. Stevens]
+* integrate ploneintranet.theme into demo setup [Guido A.J. Stevens]
 * make demo setup idempotent [Guido A.J. Stevens]
 * IMicroblogContext test coverage TODO [Guido Stevens]
 
@@ -51,7 +51,7 @@ Changelog
 0.4.3 (2013-04-29)
 ------------------
 
-* plonesocial navigation bar should not be visible to anon [gyst]
+* ploneintranet navigation bar should not be visible to anon [gyst]
 * Robot integration tests with Travis/Saucelabs integration [gyst, datakurre]
 
 0.4.2 (2012-11-26)
@@ -59,7 +59,7 @@ Changelog
 
 * update changelog, release [gyst]
 * provide a virtualenv-enabled Travis buildout that can be debugged on a dev box [gyst]
-* re-activate code analysis tests (but only on plonesocial.suite itself) [gyst]
+* re-activate code analysis tests (but only on ploneintranet.suite itself) [gyst]
 * Added locales and i18n extract script [macagua]
 * Added more improvements about i18n support [macagua]
 * Updated contributors file [macagua]
@@ -90,7 +90,7 @@ Changelog
 0.4 (2012-10-09)
 ----------------
 
-This release integrates plonesocial.network.
+This release integrates ploneintranet.network.
 
 * update docs [gyst]
 * fix dependency [gyst]
@@ -99,9 +99,9 @@ This release integrates plonesocial.network.
 * flush_queue is now public [gyst]
 * setup demo graph [gyst]
 * demo users + microblog updates [gyst]
-* link plonesocial.network [gyst]
-* integrate plonesocial.network [gyst]
-* GS name and plonesocial.network [gyst]
+* link ploneintranet.network [gyst]
+* integrate ploneintranet.network [gyst]
+* GS name and ploneintranet.network [gyst]
 * version bump to 0.4 [gyst]
 
 
@@ -120,11 +120,11 @@ This release integrates plonesocial.network.
 * activity stream view is renamed [gyst]
 * automate view and portlet assignments [gyst]
 * get rid of src dir indirection [gyst]
-* undo "extract standalone view from plonesocial.activitystream" - manual merge of multiple changes [gyst]
+* undo "extract standalone view from ploneintranet.activitystream" - manual merge of multiple changes [gyst]
 * update documentation [gyst]
 * hide stream viewlet, show only in dedicated standalone view by default [gyst]
 * cleanup extraction and declare dependencies [gyst]
-* extract standalone view from plonesocial.activitystream [gyst]
+* extract standalone view from ploneintranet.activitystream [gyst]
 
 0.1dev (Unreleased)
 -------------------

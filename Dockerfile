@@ -7,5 +7,5 @@ run apt-get install -y jed firefox xvfb
 run apt-get install -y python-tk
 run apt-get install -y python-gdbm
 run useradd -m -d /app app
-run echo plonesocial.suite > /etc/debian_chroot
+run echo ploneintranet.suite > /etc/debian_chroot
 cmd ["/bin/bash"]

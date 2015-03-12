@@ -4,7 +4,7 @@
 *~
 .installed.cfg
 .mr.developer.cfg
-src/plonesocial.*
+src/ploneintranet.*
 src/plone.app.blocks
 bin/
 coverage/

@@ -1,4 +1,4 @@
-PROJECT=plonesocial.suite
+PROJECT=ploneintranet.suite
 
 default: devel
 
@@ -26,14 +26,14 @@ devel: bin/buildout
 
 
 test:
-	Xvfb :97 1>/dev/null 2>&1 & HOME=/app DISPLAY=:97 bin/test -s plonesocial.suite
+	Xvfb :97 1>/dev/null 2>&1 & HOME=/app DISPLAY=:97 bin/test -s ploneintranet.suite
 
 demo:
-	HOME=/app DISPLAY=:0 bin/test -s plonesocial.suite -t demo --all
+	HOME=/app DISPLAY=:0 bin/test -s ploneintranet.suite -t demo --all
 
 travis-test:
-	bin/test -s plonesocial.suite
-	bin/flake8 src/plonesocial
+	bin/test -s ploneintranet.suite
+	bin/flake8 src/ploneintranet
 
 travis: install_saucelabs travis_build
 
@@ -49,7 +49,7 @@ install_saucelabs:
 
 # for manual runs
 robot-server:
-	bin/robot-server plonesocial.suite.testing.PLONESOCIAL_ROBOT_TESTING
+	bin/robot-server ploneintranet.suite.testing.PLONESOCIAL_ROBOT_TESTING
 
 predepends:
 	sudo apt-get install -y firefox python-tk
@@ -69,11 +69,11 @@ clean:
 	rm -rf bin/* .installed.cfg parts/download lib/*
 
 # robot development: start server first
-## bin/robot-server plonesocial.suite.testing.PLONESOCIAL_ROBOT_TESTING
+## bin/robot-server ploneintranet.suite.testing.PLONESOCIAL_ROBOT_TESTING
 # run and rerun tests without restarting the server
-## bin/robot src/plonesocial/suite/tests/hello_world.robot 
+## bin/robot src/ploneintranet/suite/tests/hello_world.robot 
 
 ## tired of the robot hijacking your screen?
 # sudo apt-get install xserver-xephyr
 # Xephyr :1 -ac -screen 1024x768 &
-# DISPLAY=:1 bin/test -s plonesocial.suite
+# DISPLAY=:1 bin/test -s ploneintranet.suite

@@ -9,12 +9,12 @@ PloneSocial provides a full microblogging solution,
 including activity streams, user profiles and follow/unfollow functionality.
 
 
-plonesocial.suite
+ploneintranet.suite
 -----------------
 
 This package is targeted at end-users and integrators.
 
-This is the integration package for all the various plonesocial.* packages
+This is the integration package for all the various ploneintranet.* packages
 into a single consistent user experience that's easy to install.
 
 Credits
@@ -35,8 +35,8 @@ Build status (harmless)
 Robot tests for Plone Social and Plone Intranet
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: https://secure.travis-ci.org/cosent/plonesocial.suite.png
-    :target: http://travis-ci.org/cosent/plonesocial.suite
+.. image:: https://secure.travis-ci.org/cosent/ploneintranet.suite.png
+    :target: http://travis-ci.org/cosent/ploneintranet.suite
 .. image:: http://jenkins.ploneintranet.net/buildStatus/icon?job=Plone%20Social%20Suite
    :target: http://jenkins.ploneintranet.net/job/Plone%20Social%20Suite%20Master/badge/
 
@@ -47,14 +47,14 @@ Robot tests for Plone Social and Plone Intranet
 Installation
 ============
 
-Add the ``plonesocial.suite`` egg to your buildout::
+Add the ``ploneintranet.suite`` egg to your buildout::
 
     [instance]
     eggs = 
          Zope2
          PIL
          Plone
-         plonesocial.suite
+         ploneintranet.suite
 
 Run the buildout.
 
@@ -63,9 +63,9 @@ Install "Plonesocial Suite" via the Quickinstaller.
 Theme
 -----
 
-`plonesocial.theme`_ provides a Bootstrap based Diazo theme which is activated by the default setup profile.
+`ploneintranet.theme`_ provides a Bootstrap based Diazo theme which is activated by the default setup profile.
 
-If you want the Plonesocial backend components, but not the theme, do not install plonesocial.suite
+If you want the Plonesocial backend components, but not the theme, do not install ploneintranet.suite
 but instead install the separate backend components. It's a pluggable system.
 
 Demo
@@ -99,7 +99,7 @@ Ponesocial.suite provides:
 
 The slideshow_ of the PloneSocial roadmap presentation at Plone Open Garden 2012 is available on Slideshare.
 
-An extensive roadmap_ for the plonesocial suite is available on github.
+An extensive roadmap_ for the ploneintranet suite is available on github.
 
 
 Plonesocial
@@ -107,34 +107,34 @@ Plonesocial
 
 Plonesocial consists of:
 
-`plonesocial.suite`_
- An out-of-the-box social business experience integrating all of the plonesocial.* packages.
+`ploneintranet.suite`_
+ An out-of-the-box social business experience integrating all of the ploneintranet.* packages.
  If you're an end user, this is what you're looking for.
  It installs and integrates all of the following components automatically.
 
-`plonesocial.microblog`_
+`ploneintranet.microblog`_
  Status updates.
 
-`plonesocial.activitystream`_
+`ploneintranet.activitystream`_
  Lists content changes, discussion replies, and status updates.
 
-`plonesocial.network`_
+`ploneintranet.network`_
  Follow/unfollow of users.
 
-`plonesocial.theme`_
+`ploneintranet.theme`_
  Bootstrap theme.
 
-plonesocial.like
+ploneintranet.like
  Favoriting of content. Planned.
 
-`plonesocial.buildout`_
+`ploneintranet.buildout`_
  Developer buildout. Not a Python package. Intended for Plonesocial developers only.
 
-.. _plonesocial.suite: https://github.com/cosent/plonesocial.suite
-.. _plonesocial.microblog: https://github.com/cosent/plonesocial.microblog
-.. _plonesocial.activitystream: https://github.com/cosent/plonesocial.activitystream
-.. _plonesocial.network: https://github.com/cosent/plonesocial.network
-.. _plonesocial.theme: https://github.com/cosent/plonesocial.theme
-.. _plonesocial.buildout: https://github.com/cosent/plonesocial.buildout
-.. _slideshow: http://www.slideshare.net/GuidoStevens/plonesocial-roadmap
-.. _roadmap: https://github.com/cosent/plonesocial.suite/wiki
+.. _ploneintranet.suite: https://github.com/cosent/ploneintranet.suite
+.. _ploneintranet.microblog: https://github.com/cosent/ploneintranet.microblog
+.. _ploneintranet.activitystream: https://github.com/cosent/ploneintranet.activitystream
+.. _ploneintranet.network: https://github.com/cosent/ploneintranet.network
+.. _ploneintranet.theme: https://github.com/cosent/ploneintranet.theme
+.. _ploneintranet.buildout: https://github.com/cosent/ploneintranet.buildout
+.. _slideshow: http://www.slideshare.net/GuidoStevens/ploneintranet-roadmap
+.. _roadmap: https://github.com/cosent/ploneintranet.suite/wiki
