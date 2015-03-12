@@ -14,7 +14,7 @@ long_description = (
     + '\n')
 
 setup(
-    name='ploneintranet.suite',
+    name='ploneintranet.socialsuite',
     version=version,
     description="Pre-integrated social business suite for Plone",
     long_description=long_description,
