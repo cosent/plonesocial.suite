@@ -19,4 +19,4 @@ dist/
 buildout-cache
 .cache/
 .mozilla/
-
+local/
