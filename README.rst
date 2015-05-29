@@ -1,140 +1,31 @@
+Deprecated
+==========
 
+The plonesocial.* group of packages has become ploneintranet_.
 
-Introduction
-============
+Plone Intranet features a complete redesign and re-implementation of the
+front-end user interface of plonesocial. The backend is largely unchanged
+but extended with new features: liking updates, personalized tagging.
 
-The PloneSocial suite is an integrated set of social business add-ons for Plone.
-
-PloneSocial provides a full microblogging solution, 
-including activity streams, user profiles and follow/unfollow functionality.
-
-
-plonesocial.suite
------------------
-
-This package is targeted at end-users and integrators.
-
-This is the integration package for all the various plonesocial.* packages
-into a single consistent user experience that's easy to install.
-
-Credits
--------
+Work on the ploneintranet `code base`_ is sponsored by the
+`Plone Intranet Consortium`_, a group of companies dedicated to delivering
+the leading open source digital workplace platform, based on Plone.
+Have a look, you'll like it. It's 100% open source.
 
 |Cosent|_
 
-This package is maintained by Cosent_.
+Plonesocial and Plone Intranet are initiatives by Cosent_.
 
+This repository is maintained frozen for developers who have made forks
+for use in their own projects. If you're one of those developers and are
+interested in upgrading to Plone Intranet, please contact Cosent_.
+
+Please note that commits after August 2014 are part of the ploneintranet
+rewrite, before plonesocial.* got merged into ploneintranet.*.
+
+.. _ploneintranet: https://github.com/ploneintranet/ploneintranet
+.. _code base: https://github.com/ploneintranet/ploneintranet
+.. _Plone Intranet Consortium: http://ploneintranet.com
 .. _Cosent: http://cosent.nl
 .. |Cosent| image:: http://cosent.nl/images/logo-external.png 
                     :alt: Cosent
-                    
-
-Build status (harmless)
------------------------
-
-Robot tests for Plone Social and Plone Intranet
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. image:: https://secure.travis-ci.org/cosent/plonesocial.suite.png
-    :target: http://travis-ci.org/cosent/plonesocial.suite
-.. image:: http://jenkins.ploneintranet.net/buildStatus/icon?job=Plone%20Social%20Suite
-   :target: http://jenkins.ploneintranet.net/job/Plone%20Social%20Suite%20Master/badge/
-
-.. image:: http://jenkins.ploneintranet.net/buildStatus/icon?job=Plone%20Intranet%20Suite%20Master
-   :target: http://jenkins.ploneintranet.net/job/Plone%20Intranet%20Suite%20Master/badge/
-
-
-Installation
-============
-
-Add the ``plonesocial.suite`` egg to your buildout::
-
-    [instance]
-    eggs = 
-         Zope2
-         PIL
-         Plone
-         plonesocial.suite
-
-Run the buildout.
-
-Install "Plonesocial Suite" via the Quickinstaller.
-
-Theme
------
-
-`plonesocial.theme`_ provides a Bootstrap based Diazo theme which is activated by the default setup profile.
-
-If you want the Plonesocial backend components, but not the theme, do not install plonesocial.suite
-but instead install the separate backend components. It's a pluggable system.
-
-Demo
-----
-
-If you need some demo content to play with, you can run the
-"Plonesocial Suite (demo)" profile from GenericSetup.   
-
-The demo profile creates a number of fake users that interact on the site.
-Demo users all have the same password for testing purposes.
-
-Do *not* install the demo profile into a production site.
-
-Features and Roadmap
---------------------
-
-Ponesocial.suite provides:
-
-* microblog status updates
-* personal profile with follow/unfollow
-  - and following/followers social graph views
-* activitystream, with integrated:
-  - status updates
-  - content creation
-  - discussion replies
-  - hashtag support
-  - filter by "following"
-* multi-workspace support for microblogging and activitystreams
-* (optional) a Bootstrap based Diazo theme.
-
-
-The slideshow_ of the PloneSocial roadmap presentation at Plone Open Garden 2012 is available on Slideshare.
-
-An extensive roadmap_ for the plonesocial suite is available on github.
-
-
-Plonesocial
-===========
-
-Plonesocial consists of:
-
-`plonesocial.suite`_
- An out-of-the-box social business experience integrating all of the plonesocial.* packages.
- If you're an end user, this is what you're looking for.
- It installs and integrates all of the following components automatically.
-
-`plonesocial.microblog`_
- Status updates.
-
-`plonesocial.activitystream`_
- Lists content changes, discussion replies, and status updates.
-
-`plonesocial.network`_
- Follow/unfollow of users.
-
-`plonesocial.theme`_
- Bootstrap theme.
-
-plonesocial.like
- Favoriting of content. Planned.
-
-`plonesocial.buildout`_
- Developer buildout. Not a Python package. Intended for Plonesocial developers only.
-
-.. _plonesocial.suite: https://github.com/cosent/plonesocial.suite
-.. _plonesocial.microblog: https://github.com/cosent/plonesocial.microblog
-.. _plonesocial.activitystream: https://github.com/cosent/plonesocial.activitystream
-.. _plonesocial.network: https://github.com/cosent/plonesocial.network
-.. _plonesocial.theme: https://github.com/cosent/plonesocial.theme
-.. _plonesocial.buildout: https://github.com/cosent/plonesocial.buildout
-.. _slideshow: http://www.slideshare.net/GuidoStevens/plonesocial-roadmap
-.. _roadmap: https://github.com/cosent/plonesocial.suite/wiki
